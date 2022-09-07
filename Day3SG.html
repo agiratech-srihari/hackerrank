@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let a=[1,2,3,4,5,6,7,8,9,10];
+        let value=(a.sort(     
+            function myfunction(a1,a2){
+            return a1-a2;
+        }));
+        let length=value.length;
+        for(let i=length;i>1;i--){
+          if (value[i-1] == value[i-2]){
+               value.pop();
+               var u=value.length;
+                var  output=(value[u-2]);
+                break;
+              }
+                else{
+                u=value.length;
+                 var output=(value[u-2]);
+                 break;
+              }
+          }
+        
+    </script>
+</body>
+
+</html>

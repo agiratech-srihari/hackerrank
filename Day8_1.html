@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            width: 96px;
+            height: 48px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick=incrementButton()>0</button>
+    <script>
+
+        function incrementButton() {
+            let elem = document.getElementById('btn').innerHTML;
+            console.log(elem);
+            var value = Number(elem)
+            value++
+            console.log(value);
+            document.getElementById('btn').innerHTML = value;
+
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
